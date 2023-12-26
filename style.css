@@ -1,0 +1,391 @@
+:root {
+    --orange-color: #f3b562;
+    --green-color: #647b64;
+    --Gray-1: #333;
+    --Gray-2: #4F4F4F;
+}
+
+body {
+    background: linear-gradient(180deg, rgba(254,252,248,1) 0%, rgba(243,242,240,1) 22%, rgba(252,249,247,1) 55%, rgba(255,255,255,1) 100%);
+}
+.main-font {
+    font-family: 'Roboto', sans-serif;
+}
+.meniu-font {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px; /* 125% */
+    font-variant: small-caps;
+    text-decoration: none;
+    color: #333;
+}
+
+.vidurys {
+    width: 1140px;
+    margin: 0 auto;
+}
+.flex-vidurys {
+    display: flex;
+    justify-content: center;
+}
+
+.meniu-laikiklis {
+    display: flex;
+    margin-top: 50px;
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
+}
+.logo {
+    width: 50%;
+    align-items: center;
+    height: 100%;
+    display: flex;
+}
+.links {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.ijungtas-mygtukas {
+    color: #FEFEFE;
+    padding: 10px 15px;
+    border-radius: 3px;
+    background: linear-gradient(102deg, #647B64 -4.62%, #66AC66 178.22%), linear-gradient(102deg, #0BB1E3 -4.62%, #0F2976 178.22%), #0E70AF;
+}
+.hero-msg {
+    display: flex;
+    margin-top: 50px;
+    width: 100%;
+    justify-content: space-between;
+}
+.zaideja {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.tekstas {
+    width: 495px;
+    height: 110px;
+    color: var(--Gray-1, #333);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 80%; /* 55.68px */
+    font-variant: small-caps;
+    display:flex;
+    justify-content: center;
+}
+.turinys {
+    margin-top: 24px;
+    margin-bottom: 32px;
+    width: 479px;
+    color: var(--Gray-2, #4F4F4F);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 132%; /* 26.4px */
+    letter-spacing: 0.8px;
+}
+.hero-msg-mygtukas {
+    border-radius: 2px;
+    background: linear-gradient(102deg, #647B64 -4.62%, #66AC66 178.22%);
+    box-shadow: 0px 20px 40px 0px rgba(128, 143, 150, 0.19);
+    width: 350px;
+    height: 73px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.getstarted {
+    padding-left: 28px;
+    color: #FEFEFE;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125.5%; /* 20.08px */
+    letter-spacing: 2.48px;
+    text-transform: uppercase;
+}
+.getstarted-btn {
+    padding-right: 28px;
+}
+.hero-msg-col1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+}
+
+
+.paslaugos {
+    padding-top: 145px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 500px;
+    gap: 30px;
+}
+.paslaugos-info {
+    width: 40%;
+}
+.paslaugos-info .info1 {
+    color: #F3B562;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    padding-bottom: 17px;
+}
+.paslaugos-info .info2 {
+    color: #647B64;
+    font-size: 41px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /* 45.1px */
+    text-transform: uppercase;
+    padding-bottom: 40px;
+}
+
+
+.paslaugos-daugiau {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.paslaugos .pavadinimas {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #000;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.mazi-aprasymai {
+    width: 50%;
+    height: 245px;
+}
+.mazi-aprasymai .visi {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    padding-top: 40px;
+}
+.mazi-aprasymai .visi .pav {
+    color: var(--Gray-1, #333);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 116%; /* 27.84px */
+    font-variant: small-caps;
+    padding-top: 16px;
+    padding-bottom: 6px;
+}
+.mazi-aprasymai .visi .apr {
+    color: var(--Gray-2, #4F4F4F);
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 132%; /* 17.16px */
+    letter-spacing: 0.52px;
+    width: 200px;
+}
+.mazi-aprasymai .visi svg {
+    padding: 10px;
+    background-color: #647B64;
+    border-radius: 10px;
+}
+.mazi-aprasymai.white-borderis {
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 5.874px 31.33px 0px rgba(155, 148, 148, 0.17);
+}
+.services .tekstas-mazas {
+    color: #F3B562;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    padding-bottom: 16px;
+    margin-top: 100px;
+}
+.services .tekstas-didelis {
+    color: #647B64;
+    text-align: center;
+    font-size: 41px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /* 45.1px */
+    text-transform: uppercase;
+    padding-bottom: 50px;
+}
+
+.tekstas-mazas {
+    width: 100%;
+    color: var(--orange-color);
+    text-transform: uppercase;
+    text-align: center;
+}
+.tekstas-didelis {
+    width: 100%;
+    color: var(--green-color);
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+
+}
+.savybes {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+.savybes-daugiau {
+    width: 360px;
+    height: 338px;
+}
+
+.savybes-flex {
+    display: flex;
+    align-items: center;
+}
+.savybes-daugiau.white {
+    border-radius: 8px;
+    background: linear-gradient(358deg, rgba(100, 123, 100, 0.77) -118.86%, rgba(100, 123, 100, 0.00) 25.62%, rgba(100, 123, 100, 0.00) 98.53%), #FFF;
+}
+.savybes-daugiau.green {
+    border-radius: 8px;
+    background: #647B64;
+}
+.savybes-daugiau-holder {
+    display: flex;
+    width: 100%;
+    z-index: 1;
+    gap: 30px;
+}
+.kvadratas {
+    z-index: 0;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+.kvadratas.kaire {
+    bottom: 72px;
+    left: -37px;
+
+}
+.kvadratas.desine {
+    bottom: -35px;
+    right: -265px;
+    width: 463px;
+    height: 182px;
+    border-radius: 8px;
+background: linear-gradient(198deg, rgba(239, 128, 49, 0.00) -227.37%, rgba(239, 128, 49, 0.15) 1.58%, rgba(239, 128, 49, 0.00) 103.02%);
+}
+.about-us {
+    padding-top: 180px;
+    display: flex;
+    justify-content: space-between;
+}
+.about-us .kaire {
+    width: 50%;
+}
+.about-us .desine {
+    width: 50%;
+}
+.team {
+    width: 1140px;
+    padding-top: 200px;
+}
+.btn-zalias {
+    width: 115px;
+    height: 115px;
+    left: -10px;
+    position: relative;
+    top: -33px;
+}
+.apskritimas {
+    width: 50px;
+    height: 50px;
+}
+.team .tekstas-didelis {
+    padding-bottom: 30px;
+}
+.team-daugiau {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.team-member {
+    flex-grow: 1;
+    border-radius: 8px;
+    background: linear-gradient(358deg, rgba(100, 123, 100, 0.77) -118.86%, rgba(100, 123, 100, 0.00) 25.62%, rgba(100, 123, 100, 0.00) 98.53%), #FFF;
+    box-shadow: 0 0 5px #ccc;
+}
+
+.kaire .kvadratas {
+    transform: translate(50px, 50px);
+    z-index: 0;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(198deg, rgba(239, 128, 49, 0.00) -227.37%, rgba(239, 128, 49, 0.15) 1.58%, rgba(239, 128, 49, 0.00) 103.02%);
+}
+.kaire img {
+    position: relative;
+    background-color: var(--orange-color);
+    z-index: 1;
+    width: 400px;
+    height: 400px;
+}
+.footer {
+    margin-top: 150px;
+    height: 431px;
+    width: 100%;
+    gap: 30px;
+    background: #F0DCC5;
+
+}
+@media screen and (max-width: 500px) {
+    .vidurys {
+        width: 100%;
+    }
+    .paslaugos {
+        background-color: red;
+        flex-wrap: wrap;
+    
+        height: 500px;
+        gap: 10px;
+    }
+    .paslaugos-info {
+        width: 100%;
+
+    }
+    .paslaugos-daugiau {
+        width: 100%;
+    }
+    .savybes {
+        width: 700px;
+    }
+    .about-us .kaire {
+        width: 30%;
+        transform: translate(-80vw);
+    }
+    .about-us .desine {
+        width: 70%;
+    }
+    .team {
+        width: 1000px;
+    }
+}
