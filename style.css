@@ -150,7 +150,16 @@ body {
     text-transform: uppercase;
     padding-bottom: 40px;
 }
-
+.tekstas2 {
+        width: 495px;
+        height: 110px;
+        color: var(--Gray-1, #333);
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 80%;
+        font-variant: small-caps;
+}
 
 .paslaugos-daugiau {
     width: 50%;
@@ -324,14 +333,50 @@ background: linear-gradient(198deg, rgba(239, 128, 49, 0.00) -227.37%, rgba(239,
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 40px;
 }
 
 .team-member {
-    flex-grow: 1;
+    padding: 40px;
+    position: relative;
+    width: 270px;
     border-radius: 8px;
     background: linear-gradient(358deg, rgba(100, 123, 100, 0.77) -118.86%, rgba(100, 123, 100, 0.00) 25.62%, rgba(100, 123, 100, 0.00) 98.53%), #FFF;
     box-shadow: 0 0 5px #ccc;
+}
+.team-member .nuotrauka {
+    width: 50%;
+}
+.pareigos {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+.imone {
+    color: var(--Gray-1, #333);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 116%; /* 18.56px */
+    font-variant: small-caps;
+}
+.vardas {
+    color: var(--Gray-2, #4F4F4F);
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 132%; /* 17.16px */
+    font-variant: small-caps;
+    letter-spacing: 0.52px;
+}
+
+.citata {
+    color: var(--Gray-2, #4F4F4F);
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 132%; /* 21.12px */
+    letter-spacing: 0.64px;
+    padding-top: 24px;
 }
 
 .kaire .kvadratas {
@@ -350,42 +395,390 @@ background: linear-gradient(198deg, rgba(239, 128, 49, 0.00) -227.37%, rgba(239,
     height: 400px;
 }
 .footer {
+    display: flex;
+    align-items: center;
     margin-top: 150px;
     height: 431px;
     width: 100%;
-    gap: 30px;
     background: #F0DCC5;
 
 }
+
+.grid {
+    display: grid;
+    grid-template-columns: 249px 400px auto;
+    gap: 60px;
+}
+.grid-item {
+
+  }
+.footer-logo {
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+.footer-info p {
+    padding-top: 16px;
+    color: var(--Gray-2, #4F4F4F);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 132%; /* 18.48px */
+    letter-spacing: 0.56px;
+}
+.footer-info {
+    color: var(--Gray-2, #4F4F4F);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 132%; /* 18.48px */
+    letter-spacing: 0.56px;
+}
+.footer-social {
+    display: flex;
+}
+.bubble {
+    display: inline-flex;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 16px;
+    margin-top: 16px;
+    background-color: rgb(100,123,100,0.1);
+    justify-content: center;
+    align-items: center;
+
+}
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-links h1 {
+    color: #647B64;
+    font-feature-settings: 'liga' off;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 150% */
+    margin-bottom: 21px;
+    
+}
+.footer-links p {
+    margin-bottom: 12px;
+    color: var(--Gray-1, #333);
+    font-feature-settings: 'liga' off;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+    
+}
+.col1 {
+    width: 160px;
+}
+.col2 {
+    width: 160px;
+}
+.email .text {
+    color: #647B64;
+    font-feature-settings: 'liga' off;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 150% */
+    margin-bottom: 21px;
+}
+.email-input {
+    height: 113px;
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    resize: none;
+    color: var(--Gray-2, #4F4F4F);
+    font-feature-settings: 'liga' off;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+    margin-bottom: 28px;
+}
+.team-info2 {
+    color: #647B64; font-size: 41px; font-style: normal; font-weight: 500; line-height: 110%; /* 45.1px */ text-transform: uppercase;
+}
+
 @media screen and (max-width: 500px) {
+    .logo {
+        padding-left: 32px;
+    }
+    .meniu-laikiklis {
+        align-items: center;
+    }
+    .links {
+        width: 6%;
+        display: block;
+        padding-right: 32px;
+    }
+    .desktop {
+        display: none;
+    }
     .vidurys {
         width: 100%;
+        overflow: hidden;
     }
-    .paslaugos {
-        background-color: red;
-        flex-wrap: wrap;
+
+    .tekstas {
+        width: 264px;
+        height: 110px;
+        color: var(--Gray-1, #333);
+        font-size: 37px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 80%;
+        font-variant: small-caps;
+        display: flex;
+        justify-content: center;
+    }
+    .hero-msg {
+        display: flex;
+        margin-top: 0px;
+        width: 100%;
+        justify-content: space-between;
+    }
     
-        height: 500px;
+    .turinys {
+        margin-top: 24px;
+        margin-bottom: 32px;
+        width: 269px;
+        color: var(--Gray-2, #4F4F4F);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 132%;
+        letter-spacing: 0.8px;
+    }
+    .hero-msg-mygtukas {
+        border-radius: 2px;
+        background: linear-gradient(102deg, #647B64 -4.62%, #66AC66 178.22%);
+        box-shadow: 0px 20px 40px 0px rgba(128, 143, 150, 0.19);
+        width: 250px;
+        height: 73px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .paslaugos-info {
+        width: 100%;
+        padding-left: 32px;
+    }
+    
+    .paslaugos {
+        padding-top: 25px;
+        flex-wrap: wrap;
+        height: 670px;
         gap: 10px;
+    }
+    .paslaugos-info .info1 {
+        color: #F3B562;
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+        padding-bottom: 5px;
+    }
+    
+    .mazi-aprasymai .visi {
+        display: flex;
+        flex-direction: column;
+        padding-left: 32px;
+        padding-top: 32px;
     }
     .paslaugos-info {
         width: 100%;
-
+        padding-left: 32px;
     }
+    .mazi-aprasymai .visi .apr {
+        color: var(--Gray-2, #4F4F4F);
+        font-size: 9px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 132%;
+        letter-spacing: 0.52px;
+        width: 150px;
+    }
+    .mazi-aprasymai {
+        width: 50%;
+        height: 195px;
+    }
+    .mazi-aprasymai .visi .pav {
+        color: var(--Gray-1, #333);
+        font-size: 21px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 116%;
+        font-variant: small-caps;
+        padding-top: 16px;
+        padding-bottom: 6px;
+    }
+    .mazi-aprasymai .visi .apr {
+        color: var(--Gray-2, #4F4F4F);
+        font-size: 9px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 132%;
+        letter-spacing: 0.52px;
+        width: 150px;
+    }
+
+
+
     .paslaugos-daugiau {
         width: 100%;
     }
-    .savybes {
-        width: 700px;
+
+
+
+    .services .tekstas-mazas {
+        color: #F3B562;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+        margin-top: 30px;
     }
+    .services .tekstas-didelis {
+        color: #647B64;
+        text-align: center;
+        font-size: 27px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 110%;
+        text-transform: uppercase;
+        padding-bottom: 50px;
+    }
+    .savybes {
+        position: relative;
+        width: 800px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 30px;
+    }
+    
     .about-us .kaire {
         width: 30%;
-        transform: translate(-80vw);
+        transform: translate(-90vw);
     }
+
+    .hero-msg-col1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 32px;
+        margin-top: 100px;
+    }
+    .hero-msg-col-about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 0px;
+        margin-top: 100px;
+    }
+    .turinys {
+        margin-top: 24px;
+        margin-bottom: 32px;
+        width: 204px;
+        color: var(--Gray-2, #4F4F4F);
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 132%;
+        letter-spacing: 0.8px;
+    }
+
+    .tekstas2 {
+        width: 495px;
+        height: 50px;
+        color: var(--Gray-1, #333);
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 80%;
+        font-variant: small-caps;
+    }
+    .team-info2 {
+        color: #647B64;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 110%;
+        text-transform: uppercase;
+    }
+
+
+
+
+
     .about-us .desine {
         width: 70%;
     }
     .team {
-        width: 1000px;
+        padding-top: 100px;
+        width:900px;
+        padding-left: 32px;
+    
     }
+    .team-daugiau {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        gap: 20px;
+    }
+    .team-member {
+        padding: 30px;
+        position: relative;
+        width: 220px;
+        border-radius: 8px;
+        background: linear-gradient(358deg, rgba(100, 123, 100, 0.77) -118.86%, rgba(100, 123, 100, 0.00) 25.62%, rgba(100, 123, 100, 0.00) 98.53%), #FFF;
+        box-shadow: 0 0 5px #ccc;
+    }
+
+    .grid {
+        display: grid;
+        gap: 60px;
+        grid-template-columns: none;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    .footer {
+        display: flex;
+        align-items: center;
+        margin-top: 150px;
+        height: 941px;
+        width: 100%;
+        background: #F0DCC5;
+    }
+    .prie-nuotraukos .info2 {
+        color: #647B64;
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 110%;
+        text-transform: uppercase;
+        padding-bottom: 40px;
+    }
+
+}
+@media screen and (min-width: 501px) {
+    .mobile {
+        display: none;
+    }
+
 }
